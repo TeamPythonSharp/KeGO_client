@@ -10,6 +10,10 @@
           <option name="url" value="https://github.com/m1hail1337/algorithms-project-2022" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/TeamPythonSharp/KeGO_client.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\Mihail\IdeaProjects" />
