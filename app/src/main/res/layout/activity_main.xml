@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/purple_200"
+        android:background="@color/white"
         tools:context=".MainActivity">
     <LinearLayout
             android:orientation="vertical"
@@ -14,22 +14,32 @@
             android:layout_width="match_parent">
 
         <EditText
-                android:id="@+id/edt_tittle"
-                android:hint="Title"
+                android:id="@+id/edt_target"
+                android:hint="@string/target_tint"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-        />
+                style="@style/Widget.AppCompat.AutoCompleteTextView"/>
         <EditText
-                android:id="@+id/edt_content"
-                android:hint="Content"
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-        />
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:hint="@string/time_hint"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:id="@+id/edt_time"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="@string/date_hint"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:id="@+id/edt_date"/>
         <Button
                 android:id="@+id/btn_save"
-                android:hint="Save"
+                android:hint="@string/save_btn"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
         />
-    </LinearLayout>
+        </LinearLayout>
 </RelativeLayout>
