@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:minWidth="250dp"
+                    android:minHeight="110dp"
+                    android:updatePeriodMillis="5000"
+                    android:previewImage="@drawable/widget_template"
+                    android:initialLayout="@layout/ke_g_o_widget"
+                    android:description="@string/app_widget_description"
+                    android:resizeMode="horizontal|vertical"
+                    android:widgetCategory="home_screen|keyguard"
+                    android:previewLayout="@layout/ke_g_o_widget"
+                    android:targetCellHeight="2"
+                    android:targetCellWidth="4"
+                    android:initialKeyguardLayout="@layout/ke_g_o_widget"
+/>
