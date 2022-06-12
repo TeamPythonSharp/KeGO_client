@@ -1,4 +1,4 @@
-package com.example.kegowidget;
+package com.example.kego_client;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;

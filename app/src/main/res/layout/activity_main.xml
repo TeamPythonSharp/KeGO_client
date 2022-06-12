@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/news"
-        android:layout_width="323dp"
-        android:layout_height="552dp"
-        android:layout_marginTop="176dp"
+        android:layout_width="319dp"
+        android:layout_height="404dp"
+        android:layout_marginTop="270dp"
         android:contentDescription="@string/nothing"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +21,9 @@
     <ImageView
         android:id="@+id/main_bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
+        android:layout_height="150dp"
         android:contentDescription="@string/nothing"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,15 +33,14 @@
         android:id="@+id/main_logo"
         android:layout_width="73dp"
         android:layout_height="82dp"
-        android:layout_marginBottom="80dp"
-        android:contentDescription="@string/app_name"
         android:clickable="true"
+        android:contentDescription="@string/app_name"
         android:focusable="true"
         android:transitionName="logo_transition"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_bottom"
         app:srcCompat="@drawable/logo"
         tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
 
@@ -49,14 +48,14 @@
         android:id="@+id/textInputLayout"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/input"
         app:boxBackgroundMode="none"
+        app:hintEnabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:hintEnabled="false" >
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -75,5 +74,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/progress" />
+
+    <ImageView
+        android:id="@+id/to_widget_config"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/end_time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button_plus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.kegowidget;
+package com.example.kego_widget;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;

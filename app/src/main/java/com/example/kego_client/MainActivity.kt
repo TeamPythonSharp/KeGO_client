@@ -21,5 +21,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, TasksActivity::class.java)
             startActivity(intent, options.toBundle())
         }
+
+        val toWidgetConfigButton = findViewById<ImageView>(R.id.to_widget_config)
+        toWidgetConfigButton.setOnClickListener{
+            val intent = Intent(this@MainActivity, TimerConfigActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+        }
     }
 }

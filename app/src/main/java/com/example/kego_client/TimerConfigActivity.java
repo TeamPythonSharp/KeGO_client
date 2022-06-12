@@ -1,4 +1,4 @@
-package com.example.kegowidget;
+package com.example.kego_client;
 
 
 import android.widget.Button;
@@ -44,7 +44,7 @@ public class TimerConfigActivity extends AppCompatActivity {
             }
             Paper.book().write("data_and_time", diff_date);
             Toast.makeText(TimerConfigActivity.this, "Поехали!",Toast.LENGTH_SHORT).show();
-            finish();
+            finishAfterTransition();
         });
     }
 }

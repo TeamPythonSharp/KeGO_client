@@ -9,7 +9,7 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.KeGO_client"
         tools:targetApi="31">
@@ -26,6 +26,18 @@
             android:name=".MainActivity"
             android:exported="true"/>
         <activity android:name=".TasksActivity" />
+        <activity android:name=".TimerConfigActivity" />
+        <receiver
+            android:name=".KeGOWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/ke_g_o_widget_info"/>
+        </receiver>
     </application>
 
 </manifest>

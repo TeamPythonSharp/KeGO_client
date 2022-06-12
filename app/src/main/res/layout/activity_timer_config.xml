@@ -19,26 +19,30 @@
                 android:textColorHint="@color/light_blue_50"
                 android:textColor="@color/white"
                 style="@style/Widget.AppCompat.AutoCompleteTextView"/>
+
         <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="time"
-                android:hint="@string/time_hint"
-                android:textColorHint="@color/light_blue_50"
-                android:textColor="@color/white"
-                android:maxLines="1"
-                android:maxLength="5"
-                android:id="@+id/edt_time"/>
+            android:id="@+id/edt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/time_hint"
+            android:inputType="time"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_blue_50" />
+
         <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="date"
-                android:textColorHint="@color/light_blue_50"
-                android:textColor="@color/white"
-                android:hint="@string/date_hint"
-                android:maxLines="1"
-                android:maxLength="10"
-                android:id="@+id/edt_date"/>
+            android:id="@+id/edt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/date_hint"
+            android:inputType="date"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_blue_50" />
         <Button
                 android:id="@+id/btn_save"
                 android:text="@string/save_btn"
