@@ -12,9 +12,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+public class TimerConfigActivity extends AppCompatActivity {
 
-    Button btnSave, btnRandom;
+    Button btnSave, btnChange;
     EditText  edtTarget, edtTime, edtDate;
     private final String DATE_FORMAT = "HH:mm dd.MM.yyyy";
     long diff_date;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_timer_config);
 
         Paper.init(this);
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         edtTarget = findViewById(R.id.edt_target);
         edtTime = findViewById(R.id.edt_time);
         edtDate = findViewById(R.id.edt_date);
-        btnRandom = findViewById(R.id.rndm_btn);
+        btnChange = findViewById(R.id.change_btn);
 
         btnSave.setOnClickListener(view -> {
             Paper.book().write("target","чтобы " + edtTarget.getText().toString());
@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 Date event_date = dateFormat.parse(edtTime.getText().toString() + " " + edtDate.getText().toString());
                 Date current_date = new Date();
                 diff_date = event_date.getTime() - current_date.getTime();
-
             } catch (ParseException e) {
                 e.printStackTrace();
             }
             Paper.book().write("data_and_time", diff_date);
-            Toast.makeText(MainActivity.this, "Поехали!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(TimerConfigActivity.this, "Поехали!",Toast.LENGTH_SHORT).show();
+            finish();
         });
     }
 }

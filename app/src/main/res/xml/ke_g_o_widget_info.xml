@@ -3,7 +3,7 @@
                     android:minWidth="250dp"
                     android:minHeight="110dp"
                     android:updatePeriodMillis="5000"
-                    android:previewImage="@drawable/myex"
+                    android:previewImage="@drawable/widget_template"
                     android:initialLayout="@layout/ke_g_o_widget"
                     android:description="@string/app_widget_description"
                     android:resizeMode="horizontal|vertical"

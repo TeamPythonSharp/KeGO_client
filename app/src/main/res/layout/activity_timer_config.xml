@@ -2,14 +2,12 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        tools:context=".MainActivity">
+        android:background="@color/back"
+        tools:context=".TimerConfigActivity">
     <LinearLayout
             android:orientation="vertical"
-            android:layout_centerInParent="true"
             android:layout_height="wrap_content"
             android:layout_width="match_parent">
 
@@ -18,12 +16,16 @@
                 android:hint="@string/target_tint"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:textColorHint="@color/light_blue_50"
+                android:textColor="@color/white"
                 style="@style/Widget.AppCompat.AutoCompleteTextView"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="time"
                 android:hint="@string/time_hint"
+                android:textColorHint="@color/light_blue_50"
+                android:textColor="@color/white"
                 android:maxLines="1"
                 android:maxLength="5"
                 android:id="@+id/edt_time"/>
@@ -31,15 +33,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="date"
+                android:textColorHint="@color/light_blue_50"
+                android:textColor="@color/white"
                 android:hint="@string/date_hint"
                 android:maxLines="1"
                 android:maxLength="10"
                 android:id="@+id/edt_date"/>
         <Button
                 android:id="@+id/btn_save"
-                android:hint="@string/save_btn"
+                android:text="@string/save_btn"
+                android:textColor="@color/white"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
         />
-        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

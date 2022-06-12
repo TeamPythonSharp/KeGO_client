@@ -5,23 +5,18 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.CountDownTimer;
-import android.widget.Button;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 import io.paperdb.Paper;
 
-
-import java.util.Random;
 
 /**
  * Implementation of App Widget functionality.
  */
 public class KeGOWidget extends AppWidgetProvider {
 
-
-
-    Button btnRandom;
     static String CLICK_ACTION = "CLICKED";
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager, int appWidgetId) {
@@ -30,7 +25,6 @@ public class KeGOWidget extends AppWidgetProvider {
         intent.setAction(CLICK_ACTION);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context,0,intent,0);
 
-
         Paper.init(context);
 
         String content = Paper.book().read("target");
@@ -38,6 +32,7 @@ public class KeGOWidget extends AppWidgetProvider {
 
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.ke_g_o_widget);
         views.setTextViewText(R.id.appwidget_content, content);
+
         new CountDownTimer(milliseconds + 5000, 1000) {
 
             public void onTick(long millisUntilFinished) {
@@ -45,24 +40,22 @@ public class KeGOWidget extends AppWidgetProvider {
                 long hours =  millisUntilFinished / (60 * 60 * 1000) % 24;
                 long minutes =  millisUntilFinished / (60 * 1000) % 60;
                 long seconds =  millisUntilFinished / 1000 % 60;
-                String resultString = "";
-                if (days > 0)
-                    resultString += days + ":";
-                if (hours > 0)
-                    resultString += hours + ":";
-                if (minutes > 0)
-                    resultString += minutes + ":";
-                resultString += seconds;
+                String resultString = (days > 0) ? String.format("%01d:%02d:%02d:%02d", days, hours, minutes, seconds) :
+                        String.format("%02d:%02d:%02d", hours, minutes, seconds);
+                if (milliseconds / 20 > millisUntilFinished) {          //Когда меньше 20% от исходного - таймер красный
+                    views.setTextColor(R.id.appwidget_timer, Color.parseColor("#FFD10E0E"));
+                    appWidgetManager.updateAppWidget(appWidgetId,views);
+                }
                 views.setTextViewText(R.id.appwidget_timer,resultString);
                 appWidgetManager.updateAppWidget(appWidgetId,views);
             }
 
             public void onFinish() {
                 views.setTextViewText(R.id.appwidget_timer,"00:00:00");
-                appWidgetManager.updateAppWidget(appWidgetId,views);
             }
         }.start();
-        views.setOnClickPendingIntent(R.id.rndm_btn,pendingIntent);
+
+        views.setOnClickPendingIntent(R.id.change_btn,pendingIntent);
 
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId,views);
@@ -72,7 +65,7 @@ public class KeGOWidget extends AppWidgetProvider {
     public void onReceive(Context context, Intent intent) {
         super.onReceive(context, intent);
         if (intent.getAction().equals(CLICK_ACTION)) {
-            Random random = new Random();
+
 
             Toast.makeText(context,"Дерзай!!!", Toast.LENGTH_SHORT).show();
         }
