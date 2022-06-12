@@ -3,8 +3,11 @@
     <string name="nothing"/>
     <string name="start_time">Start time:</string>
     <string name="end_time">End time:</string>
-    <string name="time_hint">Время: 13:37</string>
+    <string name="duration_time">Duration:</string>
+    <string name="time_hint">HH:mm</string>
+    <string name="duration_hint">mm</string>
     <string name="date_hint">Дата: 21.01.2101</string>
+    <string name="task_name">Task</string>
     <string name="target_tint">Цель:Полететь на луну</string>
     <string name="rndm_target">Другая</string>
     <string name="appwidget_title">У тебя всего лишь</string>
