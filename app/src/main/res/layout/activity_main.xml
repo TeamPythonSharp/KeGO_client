@@ -45,7 +45,7 @@
         tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/bot_input"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"

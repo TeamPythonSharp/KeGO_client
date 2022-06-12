@@ -27,6 +27,8 @@
             android:exported="true"/>
         <activity android:name=".TasksActivity" />
         <activity android:name=".TimerConfigActivity" />
+        <activity android:name=".BotActivity" />
+
         <receiver
             android:name=".KeGOWidget"
             android:exported="true">

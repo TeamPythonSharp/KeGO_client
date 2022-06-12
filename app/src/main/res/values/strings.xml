@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KeGO_client</string>
+    <string name="app_name">KeGO!</string>
     <string name="nothing"/>
     <string name="start_time">Start time:</string>
     <string name="end_time">End time:</string>
