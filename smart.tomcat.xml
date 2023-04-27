@@ -6,11 +6,6 @@
         <option name="path" value="C:/Program Files/apache-tomcat-9.0.74" />
         <option name="version" value="9.0.74.0" />
       </TomcatInfo>
-      <TomcatInfo>
-        <option name="name" value="Apache Tomcat/9.0.74 (2)" />
-        <option name="path" value="C:/Program Files/apache-tomcat-9.0.74" />
-        <option name="version" value="9.0.74.0" />
-      </TomcatInfo>
     </option>
   </component>
 </application>
