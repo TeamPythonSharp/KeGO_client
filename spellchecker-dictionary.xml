@@ -1,13 +1,17 @@
 <application>
   <component name="CachedDictionaryState">
     <words>
+      <w>envsensor</w>
       <w>getstatus</w>
       <w>hmmss</w>
       <w>iamhere</w>
       <w>namer</w>
       <w>setstatus</w>
+      <w>smarthub</w>
+      <w>uleb</w>
       <w>varuint</w>
       <w>whoishere</w>
+      <w>инкрементирует</w>
       <w>хаба</w>
     </words>
   </component>
