@@ -10,9 +10,10 @@
       <SuppressingContext>
         <option name="suppressed">
           <set>
-            <option value="элемент" />
             <option value="которую её положили, в том порядке, в котором" />
             <option value="у Пина" />
+            <option value="элемент" />
+            <option value="которую должна подняться вода, чтобы в поселении нашлось хотя бы два домика, между которыми" />
           </set>
         </option>
       </SuppressingContext>
