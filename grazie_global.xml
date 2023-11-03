@@ -14,6 +14,7 @@
             <option value="у Пина" />
             <option value="элемент" />
             <option value="которую должна подняться вода, чтобы в поселении нашлось хотя бы два домика, между которыми" />
+            <option value="Хост сервера" />
           </set>
         </option>
       </SuppressingContext>
