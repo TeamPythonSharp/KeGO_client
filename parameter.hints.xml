@@ -1,0 +1,9 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="Java">
+        <added pattern="org.mockito.Mockito.times(wantedNumberOfInvocations)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>
