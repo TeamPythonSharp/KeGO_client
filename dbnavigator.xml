@@ -1,16 +1,39 @@
 <application>
+  <component name="DBNavigator.Application.DatabaseDriverManager">
+    <known-driver-classes>
+      <library checksum="-1914375279" path="C:\Users\Mihail\IdeaProjects\udr-gen\bin\h2-2.2.224.jar" driver-classes="org.h2.Driver" />
+    </known-driver-classes>
+  </component>
   <component name="DBNavigator.Application.FileTypeService">
     <original-file-types />
   </component>
   <component name="DBNavigator.Application.PluginConflictManager">
+    <plugin-conflict-prompted value="false" />
     <file-types-claimed value="true" />
   </component>
+  <component name="DBNavigator.Application.PluginStatusManager">
+    <plugin-statuses>
+      <status project="$USER_HOME$/IdeaProjects/udr-gen" dbn="PASSIVE" sql="MISSING" />
+      <status project="$USER_HOME$/IdeaProjects/parser-uno-soft" dbn="PASSIVE" sql="MISSING" />
+      <status project="DEFAULT" dbn="PASSIVE" sql="MISSING" />
+    </plugin-statuses>
+  </component>
   <component name="DBNavigator.Application.Settings">
-    <debug-logging database-access="false" database-resource="false" />
-    <database-lag enabled="false" connectivity="2000" querying="2000" fetching="500" />
-    <miscellaneous dialog-sizing-reset="false" bulk-actions-enabled="false" failsafe-logging-enabled="false" background-disposer-disabled="false" />
-    <developer-mode value="false" />
-    <show-plugin-conflict-dialog value="false" />
+    <diagnostics>
+      <developer-mode>
+        <timeout value="10" />
+        <enabled value="false" />
+      </developer-mode>
+      <debug-logging failsafe-errors="false" database-access="false" database-resource="false" />
+      <database-lag enabled="false" connectivity="2000" querying="2000" fetching="500" />
+      <miscellaneous dialog-sizing-reset="false" bulk-actions-enabled="false" background-disposer-disabled="false" timeout-handling-disabled="false" />
+    </diagnostics>
+    <client-id value="DE090A71741741C4A59C67D6D2058974" />
+  </component>
+  <component name="DBNavigator.Application.TnsImportService">
+    <tns-import-options>
+      <import-type value="FIELDS" />
+    </tns-import-options>
   </component>
   <component name="DBNavigator.DefaultProject.Settings">
     <connections />
