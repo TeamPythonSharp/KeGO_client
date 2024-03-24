@@ -1,7 +1,7 @@
 <application>
   <component name="DBNavigator.Application.DatabaseDriverManager">
     <known-driver-classes>
-      <library checksum="-1914375279" path="C:\Users\Mihail\IdeaProjects\udr-gen\bin\h2-2.2.224.jar" driver-classes="org.h2.Driver" />
+      <library checksum="1913555512" path="C:\Users\Mihail\IdeaProjects\udr-gen\build\install\udr-gen\lib\h2-2.2.224.jar" driver-classes="org.h2.Driver" />
     </known-driver-classes>
   </component>
   <component name="DBNavigator.Application.FileTypeService">
