@@ -14,6 +14,7 @@
   <component name="DBNavigator.Application.PluginStatusManager">
     <plugin-statuses>
       <status project="$USER_HOME$/IdeaProjects/udr-gen" dbn="ACTIVE" sql="MISSING" />
+      <status project="$USER_HOME$/IdeaProjects/fintech-company-m1hail1337" dbn="PASSIVE" sql="MISSING" />
       <status project="$USER_HOME$/IdeaProjects/parser-uno-soft" dbn="PASSIVE" sql="MISSING" />
       <status project="DEFAULT" dbn="PASSIVE" sql="MISSING" />
       <status project="$USER_HOME$/IdeaProjects/Sandbox" dbn="PASSIVE" sql="MISSING" />
