@@ -21,6 +21,7 @@
       <status project="$USER_HOME$/IdeaProjects/web-application-labs" dbn="PASSIVE" sql="MISSING" />
       <status project="$USER_HOME$/IdeaProjects/proc_sys" dbn="PASSIVE" sql="MISSING" />
       <status project="$USER_HOME$/IdeaProjects/os-emulation-lab" dbn="PASSIVE" sql="MISSING" />
+      <status project="$USER_HOME$/IdeaProjects/file-exchanger" dbn="PASSIVE" sql="MISSING" />
       <status project="DEFAULT" dbn="PASSIVE" sql="MISSING" />
       <status project="$USER_HOME$/IdeaProjects/Sandbox" dbn="PASSIVE" sql="MISSING" />
     </plugin-statuses>
