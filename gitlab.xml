@@ -7,6 +7,13 @@
       "server": {
         "uri": "https://gitlab.baltinfocom.ru"
       }
+    },
+    {
+      "id": "f4f08ff4-a612-43bf-9941-0dfe603eae93",
+      "name": "m1hail1337",
+      "server": {
+        "uri": "https://gitlab.com"
+      }
     }
   ]
 }]]></component>
